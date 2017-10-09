@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.stories_demo.field_stories_content
+    - node.type.stories_demo
+  module:
+    - entity_reference_revisions
+    - user
+id: node.stories_demo.default
+targetEntityType: node
+bundle: stories_demo
+mode: default
+content:
+  field_stories_content:
+    type: entity_reference_revisions_entity_view
+    weight: 101
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_stories_image_mime_type
+    - media_entity.bundle.stories_image
+id: media.stories_image.field_stories_image_mime_type
+field_name: field_stories_image_mime_type
+entity_type: media
+bundle: stories_image
+label: 'MIME Type'
+description: 'Automatically added on save.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

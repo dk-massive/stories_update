@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.stories_media_video_selection
+  module:
+    - views
+name: stories_media_video_management
+label: 'Media: Video Management'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Select Videos'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  a5d6fd2d-5846-477f-b7e1-cc20e1f4b646:
+    settings:
+      view: stories_media_video_selection
+      view_display: entity_browser_1
+      submit_text: 'Select Video'
+      auto_select: false
+    uuid: a5d6fd2d-5846-477f-b7e1-cc20e1f4b646
+    weight: 1
+    label: 'Select Video'
+    id: view

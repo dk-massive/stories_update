@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity_image
+id: stories_image
+label: Image
+description: 'Image based media. This media type can be used site-wide to create a library of reusable image media assets. Additional image media types may be created for specific use cases.'
+type: image
+queue_thumbnail_downloads: false
+new_revision: true
+type_configuration:
+  source_field: field_stories_image
+  gather_exif: false
+field_map:
+  mime: field_stories_image_mime_type
+  width: field_stories_image_width
+  height: field_stories_image_height

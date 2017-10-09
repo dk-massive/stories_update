@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Stories Demo'
+type: stories_demo
+description: 'A content type to demo Stories Module functionality. This may be deleted.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

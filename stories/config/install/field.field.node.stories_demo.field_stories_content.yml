@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_stories_content
+    - node.type.stories_demo
+  module:
+    - entity_reference_revisions
+id: node.stories_demo.field_stories_content
+field_name: field_stories_content
+entity_type: node
+bundle: stories_demo
+label: 'Stories Content'
+description: 'Choose from paragraph types provided by Stories Module. These may be added to any content type using a Entity Reference Revisions field type.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    target_bundles_drag_drop:
+      stories_cta:
+        weight: 4
+        enabled: false
+      stories_curated_content:
+        weight: 5
+        enabled: false
+      stories_text:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

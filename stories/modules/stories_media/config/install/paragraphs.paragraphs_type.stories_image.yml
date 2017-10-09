@@ -1,0 +1,5 @@
+langcode: en
+status: true
+dependencies: {  }
+id: stories_image
+label: 'Media: Image'

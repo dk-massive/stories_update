@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity_slideshow
+id: stories_slideshow
+label: Slideshow
+description: 'Image based slideshow using the Image media bundle. This could be extended to be a slideshow of multiple media types.'
+type: slideshow
+queue_thumbnail_downloads: false
+new_revision: false
+type_configuration:
+  source_field: field_stories_slideshow_images
+field_map: {  }

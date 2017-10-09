@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.stories_embed
+    - field.field.media.stories_web_video.field_stories_video
+    - field.field.media.stories_web_video.field_stories_video_caption
+    - media_entity.bundle.stories_web_video
+  module:
+    - video_embed_field
+id: media.stories_web_video.stories_embed
+targetEntityType: media
+bundle: stories_web_video
+mode: stories_embed
+content:
+  field_stories_video:
+    type: video_embed_field_video
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_stories_video_caption: true
+  name: true
+  thumbnail: true
+  uid: true

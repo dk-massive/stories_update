@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: stories_preview_small
+label: 'Stories Preview Small'
+effects:
+  7b1b7669-7266-439c-8193-1669ddc24561:
+    uuid: 7b1b7669-7266-439c-8193-1669ddc24561
+    id: image_scale
+    weight: 1
+    data:
+      width: 120
+      height: null
+      upscale: false

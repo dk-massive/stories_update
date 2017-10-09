@@ -1,0 +1,67 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.stories_slideshow.field_stories_slideshow_caption
+    - field.field.media.stories_slideshow.field_stories_slideshow_images
+    - media_entity.bundle.stories_slideshow
+  module:
+    - image
+    - text
+id: media.stories_slideshow.default
+targetEntityType: media
+bundle: stories_slideshow
+mode: default
+content:
+  created:
+    type: timestamp
+    weight: 0
+    region: content
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+  field_stories_slideshow_caption:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_stories_slideshow_images:
+    weight: 4
+    label: above
+    settings:
+      view_mode: stories_slide
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  name:
+    type: string
+    weight: 1
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  thumbnail:
+    type: image
+    weight: 3
+    region: content
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+hidden: {  }

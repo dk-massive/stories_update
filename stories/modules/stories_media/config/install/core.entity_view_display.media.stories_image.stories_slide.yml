@@ -1,0 +1,44 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.stories_slide
+    - field.field.media.stories_image.field_stories_caption
+    - field.field.media.stories_image.field_stories_image
+    - field.field.media.stories_image.field_stories_image_height
+    - field.field.media.stories_image.field_stories_image_mime_type
+    - field.field.media.stories_image.field_stories_image_width
+    - image.style.stories_slide_default
+    - media_entity.bundle.stories_image
+  module:
+    - image
+    - text
+id: media.stories_image.stories_slide
+targetEntityType: media
+bundle: stories_image
+mode: stories_slide
+content:
+  field_stories_caption:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_stories_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: stories_slide_default
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  field_stories_image_height: true
+  field_stories_image_mime_type: true
+  field_stories_image_width: true
+  name: true
+  thumbnail: true
+  uid: true
