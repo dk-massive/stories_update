@@ -1,0 +1,37 @@
+<?php
+/**
+ * @file
+ * Contains stories_media.module.
+ */
+
+/**
+ * Implements theme_preprocess_TEMPLATE().
+ */
+function stories_media_preprocess_paragraph(&$variables) {
+  $paragraph = $variables['paragraph'];
+  // Make sure Paragraph exists.
+  if (!$paragraph) {
+    return FALSE;
+  }
+
+  // Key is Paragraph Bundle Machine Name.
+  // Value is the field used for alignment.
+  $types = [
+    'stories_image' => 'field_stories_image_alignment',
+    'stories_video' => 'field_stories_video_alignment',
+  ];
+
+  // Only run for specific paragraph bundles.
+  if (!array_key_exists($paragraph->getType(), $types)) {
+    return FALSE;
+  }
+
+  // Make sure the field exists.
+  if (!$paragraph->hasField($types[$paragraph->getType()])) {
+    return FALSE;
+  }
+
+  // Add alignment data-align attribute.
+  $align = $paragraph->{$types[$paragraph->getType()]}->getString();
+  $variables['attributes']['data-align'][] = $align;
+}
