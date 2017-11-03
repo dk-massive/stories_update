@@ -1,4 +1,6 @@
 name: Stories
+description: 'Provides default Paragraph Types to jumpstart sitebuilding.'
+package: Authoring
 type: module
 core: 8.x
 dependencies:

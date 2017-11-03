@@ -1,5 +1,6 @@
 name: 'Stories Media'
 description: 'Enables Image, Video and Slideshow media entities and enables corresponding paragraph types.'
+package: Authoring
 type: module
 core: 8.x
 dependencies:
