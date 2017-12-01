@@ -1,5 +1,5 @@
 name: Stories
-description: 'Provides default Paragraph Types to jumpstart sitebuilding.'
+description: 'Provides default Paragraph Types to jumpstart site building.'
 package: Authoring
 type: module
 core: 8.x
@@ -8,24 +8,11 @@ dependencies:
   - dropzonejs_eb_widget
   - entity_browser
   - entity_browser_entity_form
-  - entity_reference_revisions
-  - field
-  - file
-  - image
   - inline_entity_form
   - link
-  - media_entity
-  - media_entity_image
   - media_entity_slideshow
-  - menu_ui
-  - node
-  - options
   - paragraphs
-  - path
   - tablefield
-  - text
-  - user
   - video_embed_field
   - video_embed_media
-  - views
   - viewsreference
