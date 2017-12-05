@@ -3,7 +3,6 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_stories_curated_content
-    - node.type.stories_demo
     - paragraphs.paragraphs_type.stories_curated_content
 id: paragraph.stories_curated_content.field_stories_curated_content
 field_name: field_stories_curated_content
@@ -18,8 +17,7 @@ default_value_callback: ''
 settings:
   handler: 'default:node'
   handler_settings:
-    target_bundles:
-      stories_demo: stories_demo
+    target_bundles: {  }
     sort:
       field: _none
     auto_create: false
