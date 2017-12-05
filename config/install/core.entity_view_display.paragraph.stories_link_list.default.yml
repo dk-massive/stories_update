@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.stories_link_list.field_stories_link_list_heading
+    - field.field.paragraph.stories_link_list.field_stories_heading
     - field.field.paragraph.stories_link_list.field_stories_link_list_links
     - paragraphs.paragraphs_type.stories_link_list
   module:
@@ -12,7 +12,7 @@ targetEntityType: paragraph
 bundle: stories_link_list
 mode: default
 content:
-  field_stories_link_list_heading:
+  field_stories_heading:
     weight: 0
     label: hidden
     settings:

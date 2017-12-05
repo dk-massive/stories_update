@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.eb_media_selectors
+  module:
+    - views
+name: image
+label: Image
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Select Images'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  23a4f63b-04ac-4928-b72e-60121f644540:
+    settings:
+      view: eb_media_selectors
+      view_display: image
+      submit_text: 'Select Images'
+      auto_select: false
+    uuid: 23a4f63b-04ac-4928-b72e-60121f644540
+    weight: 1
+    label: Images
+    id: view

@@ -1,5 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: stories_video
-label: 'Media: Video'

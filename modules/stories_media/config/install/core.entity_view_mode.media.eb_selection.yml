@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.eb_selection
+label: 'EB Selection'
+targetEntityType: media
+cache: true

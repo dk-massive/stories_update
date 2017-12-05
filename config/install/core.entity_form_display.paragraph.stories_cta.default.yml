@@ -3,8 +3,8 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.stories_cta.field_stories_cta_description
-    - field.field.paragraph.stories_cta.field_stories_cta_heading
     - field.field.paragraph.stories_cta.field_stories_cta_link
+    - field.field.paragraph.stories_cta.field_stories_heading
     - paragraphs.paragraphs_type.stories_cta
   module:
     - link
@@ -22,14 +22,6 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
-  field_stories_cta_heading:
-    weight: 0
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_stories_cta_link:
     weight: 2
     settings:
@@ -37,6 +29,14 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_stories_heading:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
 hidden:
   created: true

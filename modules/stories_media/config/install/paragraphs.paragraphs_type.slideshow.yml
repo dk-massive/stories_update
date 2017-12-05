@@ -1,8 +1,8 @@
 langcode: en
 status: true
 dependencies: {  }
-id: stories_views
-label: 'Views Content List'
+id: slideshow
+label: Slideshow
 icon_uuid: null
-description: null
+description: ''
 behavior_plugins: {  }
