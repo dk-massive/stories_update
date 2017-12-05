@@ -10,8 +10,8 @@ dependencies:
     - image
     - media
     - user
-id: eb_media_selectors
-label: 'EB: Media Selectors'
+id: stories_media_selectors
+label: 'Stories: Media Selectors'
 module: views
 description: 'Create the listings of media content for the Entity Browser module to use.'
 tag: ''

@@ -4,8 +4,8 @@ dependencies:
   module:
     - media
     - paragraphs
-id: paragraph.field_slideshow
-field_name: field_slideshow
+id: paragraph.field_stories_slideshow
+field_name: field_stories_slideshow
 entity_type: paragraph
 type: entity_reference
 settings:

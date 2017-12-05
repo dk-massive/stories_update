@@ -2,36 +2,36 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.slideshow.field_alignment
-    - field.field.paragraph.slideshow.field_slideshow
-    - paragraphs.paragraphs_type.slideshow
+    - field.field.paragraph.stories_image.field_stories_alignment
+    - field.field.paragraph.stories_image.field_stories_image
+    - paragraphs.paragraphs_type.stories_image
   module:
     - entity_browser_entity_form
     - inline_entity_form
-id: paragraph.slideshow.default
+id: paragraph.stories_image.default
 targetEntityType: paragraph
-bundle: slideshow
+bundle: stories_image
 mode: default
 content:
-  field_alignment:
-    weight: 0
+  field_stories_alignment:
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
-  field_slideshow:
-    weight: 1
+  field_stories_image:
+    weight: 0
     settings:
       form_mode: default
       override_labels: true
-      label_singular: Slideshow
-      label_plural: Slideshows
+      label_singular: Image
+      label_plural: Images
       allow_new: true
       allow_existing: true
       match_operator: CONTAINS
     third_party_settings:
       entity_browser_entity_form:
-        entity_browser_id: slideshow
+        entity_browser_id: stories_image
     type: inline_entity_form_complex
     region: content
 hidden:

@@ -14,24 +14,12 @@ function stories_media_preprocess_paragraph(&$variables) {
     return FALSE;
   }
 
-  // Key is Paragraph Bundle Machine Name.
-  // Value is the field used for alignment.
-  $types = [
-    'stories_image' => 'field_stories_image_alignment',
-    'stories_video' => 'field_stories_video_alignment',
-  ];
-
-  // Only run for specific paragraph bundles.
-  if (!array_key_exists($paragraph->getType(), $types)) {
-    return FALSE;
-  }
-
   // Make sure the field exists.
-  if (!$paragraph->hasField($types[$paragraph->getType()])) {
+  if ($paragraph->hasField('field_stories_alignment')) {
     return FALSE;
   }
 
   // Add alignment data-align attribute.
-  $align = $paragraph->{$types[$paragraph->getType()]}->getString();
+  $align = $paragraph->field_stories_alignment->getString();
   $variables['attributes']['data-align'][] = $align;
 }

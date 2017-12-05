@@ -3,12 +3,12 @@ status: true
 dependencies:
   config:
     - media.type.image
-    - views.view.eb_media_selectors
+    - views.view.stories_media_selectors
   module:
     - dropzonejs_eb_widget
     - media
     - views
-name: image_uploader
+name: stories_image_uploader
 label: 'Image w/ Uploader'
 display: modal
 display_configuration:
@@ -21,7 +21,17 @@ selection_display_configuration: {  }
 widget_selector: tabs
 widget_selector_configuration: {  }
 widgets:
-  9d5039d6-43dc-4ef6-9cca-4bc57a3d7943:
+  6c45e25b-e892-4ae4-b1f6-ac690fa58e74:
+    settings:
+      view: stories_media_selectors
+      view_display: image
+      submit_text: 'Select Images'
+      auto_select: false
+    uuid: 6c45e25b-e892-4ae4-b1f6-ac690fa58e74
+    weight: 1
+    label: Library
+    id: view
+  cce5164f-9478-4ea4-9851-b5a866d1b39b:
     settings:
       form_mode: default
       media_type: image
@@ -36,17 +46,7 @@ widgets:
       resize_method: contain
       thumbnail_method: contain
       submit_text: 'Upload Images'
-    uuid: 9d5039d6-43dc-4ef6-9cca-4bc57a3d7943
-    weight: -9
+    uuid: cce5164f-9478-4ea4-9851-b5a866d1b39b
+    weight: 2
     label: Upload
     id: dropzonejs_media_entity_inline_entity_form
-  40e779fb-bcd9-424e-8d89-0e76530d238b:
-    settings:
-      view: eb_media_selectors
-      view_display: image
-      submit_text: 'Select Images'
-      auto_select: false
-    uuid: 40e779fb-bcd9-424e-8d89-0e76530d238b
-    weight: -10
-    label: Library
-    id: view

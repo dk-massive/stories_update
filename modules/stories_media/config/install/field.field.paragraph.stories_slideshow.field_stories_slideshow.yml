@@ -2,16 +2,16 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_slideshow
+    - field.storage.paragraph.field_stories_slideshow
     - media.type.slideshow
-    - paragraphs.paragraphs_type.slideshow
-id: paragraph.slideshow.field_slideshow
-field_name: field_slideshow
+    - paragraphs.paragraphs_type.stories_slideshow
+id: paragraph.stories_slideshow.field_stories_slideshow
+field_name: field_stories_slideshow
 entity_type: paragraph
-bundle: slideshow
+bundle: stories_slideshow
 label: Slideshow
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

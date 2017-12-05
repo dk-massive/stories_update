@@ -2,14 +2,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_alignment
-    - paragraphs.paragraphs_type.slideshow
+    - field.storage.paragraph.field_stories_alignment
+    - paragraphs.paragraphs_type.stories_slideshow
   module:
     - options
-id: paragraph.slideshow.field_alignment
-field_name: field_alignment
+id: paragraph.stories_slideshow.field_stories_alignment
+field_name: field_stories_alignment
 entity_type: paragraph
-bundle: slideshow
+bundle: stories_slideshow
 label: Alignment
 description: ''
 required: true

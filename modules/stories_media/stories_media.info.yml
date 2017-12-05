@@ -7,6 +7,7 @@ dependencies:
   - dropzonejs_eb_widget
   - entity_browser
   - entity_browser_entity_form
+  - field
   - file
   - image
   - inline_entity_form
@@ -14,6 +15,9 @@ dependencies:
   - media_entity_slideshow
   - options
   - paragraphs
+  - path
+  - text
+  - user
   - video_embed_field
   - video_embed_media
   - views

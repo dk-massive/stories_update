@@ -2,29 +2,29 @@ langcode: en
 status: true
 dependencies:
   config:
-    - views.view.eb_media_selectors
+    - views.view.stories_media_selectors
   module:
     - views
-name: image
-label: Image
+name: stories_slideshow
+label: Slideshow
 display: modal
 display_configuration:
   width: ''
   height: ''
-  link_text: 'Select Images'
+  link_text: 'Select Slideshows'
   auto_open: false
 selection_display: no_display
 selection_display_configuration: {  }
 widget_selector: single
 widget_selector_configuration: {  }
 widgets:
-  23a4f63b-04ac-4928-b72e-60121f644540:
+  38769132-7d3e-4790-8e3b-78f41010b368:
     settings:
-      view: eb_media_selectors
-      view_display: image
-      submit_text: 'Select Images'
+      view: stories_media_selectors
+      view_display: slideshow
+      submit_text: 'Select Slideshows'
       auto_select: false
-    uuid: 23a4f63b-04ac-4928-b72e-60121f644540
+    uuid: 38769132-7d3e-4790-8e3b-78f41010b368
     weight: 1
-    label: Images
+    label: Slideshows
     id: view
