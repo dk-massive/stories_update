@@ -1,35 +1,3 @@
-# Ignore config export directory as we shouldn't need it in during dev.
-/config/**/*.yml
-
-# Ignore sensitive information
-/web/sites/*/settings.local.php
-
-# Ignore Drupal's file directory
-/web/sites/*/files/
-/web/sites/*/files
-/web/sites/*/private
-/web/files/*
-
-# Avoid accidental modification of pantheon.upstream.yml in sites
-# created from this upstream
-*pantheon.upstream.yml
-
-# Pantheon commits a settings.php for environment-specific settings.
-# Place local settings in settings.local.php
-/web/sites/*/settings.local.php
-
-# Note that services.local.yml is not loaded by default. If you would like
-# to use this file add the following to your settings.local.php file:
-#   $settings['container_yamls'][] = __DIR__ . '/services.local.yml';
-/web/sites/*/services.local.yml
-
-# ** Only works in OSs that support newer versions of fnmatch (Bash 4+)
-/web/sites/default/**/files
-/web/sites/default/**/private
-
-# Ignore SimpleTest multi-site environment.
-/web/sites/simpletest
-
 # Packages #
 ############
 *.7z
