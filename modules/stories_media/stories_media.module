@@ -15,7 +15,7 @@ function stories_media_preprocess_paragraph(&$variables) {
   }
 
   // Make sure the field exists.
-  if ($paragraph->hasField('field_stories_alignment')) {
+  if (!$paragraph->hasField('field_stories_alignment')) {
     return FALSE;
   }
 
