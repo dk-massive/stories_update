@@ -4,9 +4,9 @@ package: Authoring
 type: module
 core: 8.x
 dependencies:
-  - dropzonejs:dropzonejs_eb_widget (>=8.x-2.0)
-  - entity_browser:entity_browser (>=8.x-2.0)
-  - entity_browser:entity_browser_entity_form (>=8.x-2.0)
+  - dropzonejs:dropzonejs_eb_widget (>=8.x-2.x)
+  - entity_browser:entity_browser (>=8.x-2.x)
+  - entity_browser:entity_browser_entity_form (>=8.x-2.x)
   - drupal:field
   - drupal:file
   - drupal:image
@@ -18,7 +18,7 @@ dependencies:
   - drupal:user
   - drupal:views
   - inline_entity_form:inline_entity_form
-  - media_entity_slideshow:media_entity_slideshow (>=8.x-2.0)
+  - media_entity_slideshow:media_entity_slideshow (>=8.x-2.x)
   - paragraphs:paragraphs
   - video_embed_field:video_embed_field
   - video_embed_field:video_embed_media
