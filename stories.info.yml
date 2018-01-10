@@ -4,14 +4,15 @@ package: Authoring
 type: module
 core: 8.x
 dependencies:
-  - block_field
-  - entity_reference_revisions
-  - field
-  - inline_entity_form
-  - link
-  - node
-  - paragraphs
-  - tablefield
-  - text
-  - views
-  - viewsreference
+  - block_field:block_field
+  - drupal:field
+  - drupal:link
+  - drupal:node
+  - drupal:system (>=8.4)
+  - drupal:text
+  - drupal:views
+  - entity_reference_revisions:entity_reference_revisions
+  - inline_entity_form:inline_entity_form
+  - paragraphs:paragraphs
+  - tablefield:tablefield
+  - viewsreference:viewsreference
