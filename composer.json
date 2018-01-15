@@ -25,5 +25,8 @@
     "drupal/tablefield": "~2.0",
     "drupal/viewsreference": "~1.0",
     "drupal/video_embed_field": "~2.0"
+  },
+  "require-dev": {
+    "drupal/features": "~3.0"
   }
 }
