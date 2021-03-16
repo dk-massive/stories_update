@@ -1,0 +1,8 @@
+name: Stories Layouts
+type: module
+description: Stories layout definitions.
+php: 7.2
+core_version_requirement: ^8.8 || ^9
+configure: stories_layouts.settings
+dependencies:
+  - 'layout_options:layout_options'

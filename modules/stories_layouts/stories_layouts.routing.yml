@@ -1,0 +1,7 @@
+acc_layouts.settings:
+  path: /admin/config/development/stories_layouts
+  defaults:
+    _title: 'Administer Stories Layouts'
+    _form: \Drupal\stories_layouts\Form\StoriesLayoutsSettingsForm
+  requirements:
+    _permission: 'configure stories_layouts'

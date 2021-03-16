@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_display_mode
+    - paragraphs.paragraphs_type.image
+  module:
+    - entity_reference_display
+id: paragraph.image.field_display_mode
+field_name: field_display_mode
+entity_type: paragraph
+bundle: image
+label: 'Aspect Ratio'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: default
+default_value_callback: ''
+settings:
+  exclude:
+    default: default
+  negate: 1
+field_type: entity_reference_display

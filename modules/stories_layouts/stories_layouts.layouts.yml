@@ -1,0 +1,91 @@
+stories_one_col:
+  label: 'One Column'
+  path: layouts/one_column
+  category: 'ACC Layouts'
+  template: one_column
+  class: '\Drupal\stories_layouts\Plugin\Layout\LayoutBase'
+  default_region: column_one
+  icon_map:
+    - [column_one]
+  regions:
+    column_one:
+      label: Column
+
+stories_two_col:
+  label: 'Two Column'
+  path: layouts/two_column
+  category: 'ACC Layouts'
+  template: two_column
+  class: '\Drupal\stories_layouts\Plugin\Layout\LayoutBase'
+  default_region: column_one
+  icon_map:
+    - [column_one, column_two]
+  regions:
+    column_one:
+      label: Column One
+    column_two:
+      label: Column Two
+
+stories_three_col:
+  label: 'Three Column'
+  path: layouts/three_column
+  category: 'ACC Layouts'
+  template: three_column
+  class: '\Drupal\stories_layouts\Plugin\Layout\LayoutBase'
+  default_region: column_one
+  icon_map:
+    - [column_one, column_two, column_three]
+  regions:
+    column_one:
+      label: Column One
+    column_two:
+      label: Column Two
+    column_three:
+      label: Column Three
+
+stories_four_col:
+  label: 'Four Column'
+  path: layouts/four_column
+  category: 'ACC Layouts'
+  template: four_column
+  class: '\Drupal\stories_layouts\Plugin\Layout\LayoutBase'
+  default_region: column_one
+  icon_map:
+    - [column_one, column_two, column_three, column_four]
+  regions:
+    column_one:
+      label: Column One
+    column_two:
+      label: Column Two
+    column_three:
+      label: Column Three
+    column_four:
+      label: Column Four
+
+stories_main_sidebar:
+  label: 'Main with Sidebar'
+  path: layouts/main_sidebar
+  category: 'ACC Layouts'
+  template: main_sidebar
+  class: '\Drupal\stories_layouts\Plugin\Layout\LayoutBase'
+  default_region: main
+  icon_map:
+    - [main, main, sidebar]
+  regions:
+    main:
+      label: Main
+    sidebar:
+      label: Sidebar
+
+stories_full:
+  label: 'Full Section'
+  path: layouts/full
+  category: 'ACC Layouts'
+  template: full
+  class: '\Drupal\stories_layouts\Plugin\Layout\LayoutBase'
+  default_region: main
+  icon_map:
+    - [main]
+  regions:
+    main:
+      label: Main

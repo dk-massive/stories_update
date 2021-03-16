@@ -1,0 +1,9 @@
+.l-section.l-section--three-col {
+  display: flex;
+}
+
+.l-section.l-section--three-col .l-section__col {
+  width: 33.333%;
+}
+
+

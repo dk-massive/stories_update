@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.content_list.field_content_list
+    - field.field.paragraph.content_list.field_display_mode
+    - paragraphs.paragraphs_type.content_list
+  module:
+    - entity_reference_display
+id: paragraph.content_list.default
+targetEntityType: paragraph
+bundle: content_list
+mode: default
+content:
+  field_content_list:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      display_field: null
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_display_default
+    region: content
+hidden:
+  field_display_mode: true

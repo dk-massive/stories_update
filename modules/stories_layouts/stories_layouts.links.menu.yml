@@ -1,0 +1,5 @@
+acc_layouts.settings:
+  title: 'Stories Layouts'
+  description: 'Configure the settings for Stories Layouts.'
+  route_name: stories_layouts.settings
+  parent: system.admin_config_development

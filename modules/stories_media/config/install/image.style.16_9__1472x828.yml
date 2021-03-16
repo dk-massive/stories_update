@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.16_9
+  module:
+    - crop
+name: 16_9__1472x828
+label: '16:9 1472x828'
+effects:
+  6c5baf25-e903-462a-a6e3-4d14f8cbe977:
+    uuid: 6c5baf25-e903-462a-a6e3-4d14f8cbe977
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: '16_9'
+  25b0da0c-af6d-4829-a62f-f9d09b8fdb08:
+    uuid: 25b0da0c-af6d-4829-a62f-f9d09b8fdb08
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 1472
+      height: 828
+      anchor: center-center

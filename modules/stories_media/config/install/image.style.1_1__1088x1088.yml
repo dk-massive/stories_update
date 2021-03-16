@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.1_1
+  module:
+    - crop
+name: 1_1__1088x1088
+label: '1:1 1088x1088'
+effects:
+  7d0221fb-d8f2-40ab-9a78-34bc061c9db3:
+    uuid: 7d0221fb-d8f2-40ab-9a78-34bc061c9db3
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: '1_1'
+  3483b76f-8234-48d7-a73c-ad20f6096a69:
+    uuid: 3483b76f-8234-48d7-a73c-ad20f6096a69
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 1088
+      height: 1088
+      anchor: center-center

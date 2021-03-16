@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.4_3
+  module:
+    - crop
+name: 4_3__256x192
+label: '4:3 256x192'
+effects:
+  074f5049-ffd7-42e5-a78f-791916a5dded:
+    uuid: 074f5049-ffd7-42e5-a78f-791916a5dded
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: '4_3'
+  de7554a6-f781-4a2b-8830-1c531671049c:
+    uuid: de7554a6-f781-4a2b-8830-1c531671049c
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 256
+      height: 192
+      anchor: center-center

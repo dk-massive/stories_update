@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: block_reference
+label: 'Block Reference'
+icon_uuid: null
+icon_default: null
+description: 'Display a block within the paragraph.'
+behavior_plugins: {  }

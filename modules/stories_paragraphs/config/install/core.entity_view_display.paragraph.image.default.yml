@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image.field_align
+    - field.field.paragraph.image.field_display_mode
+    - field.field.paragraph.image.field_media_entity
+    - paragraphs.paragraphs_type.image
+  module:
+    - entity_class_formatter
+    - entity_reference_display
+id: paragraph.image.default
+targetEntityType: paragraph
+bundle: image
+mode: default
+content:
+  field_align:
+    weight: 2
+    label: hidden
+    settings:
+      prefix: ''
+      suffix: ''
+      attr: ''
+    third_party_settings: {  }
+    type: entity_class_formatter
+    region: content
+  field_media_entity:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+      display_field: null
+    third_party_settings: {  }
+    type: entity_reference_display_default
+    region: content
+hidden:
+  field_display_mode: true

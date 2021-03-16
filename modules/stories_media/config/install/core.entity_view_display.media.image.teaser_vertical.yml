@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.teaser_vertical
+    - field.field.media.image.field_caption
+    - field.field.media.image.field_media_image
+    - image.style.16_10__800x500
+    - media.type.image
+  module:
+    - image
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: media.image.teaser_vertical
+targetEntityType: media
+bundle: image
+mode: teaser_vertical
+content:
+  field_media_image:
+    label: visually_hidden
+    settings:
+      image_style: 16_10__800x500
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_caption: true
+  name: true
+  thumbnail: true
+  uid: true

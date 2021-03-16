@@ -1,0 +1,49 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a four-column layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% if content %}
+  {% do region_attributes.main.addClass('l-section__main') %}
+  {% do region_attributes.sidebar.addClass('l-section__sidebar') %}
+
+  {% if settings.background_color != 'light' %}
+    {% do attributes.addClass('t-' ~ settings.background_color ) %}
+  {% endif %}
+
+  {% if settings.spacing %}
+    {% do attributes.addClass('l-section--' ~ settings.spacing ) %}
+  {% endif %}
+
+  {% if settings.h_rules == 'above' or settings.h_rules == 'both' %}
+    <hr/>
+  {% endif %}
+
+  <div {{ attributes.addClass('l-section l-section--main-sidebar') }}>
+    {% if content.main %}
+      <div {{ region_attributes.main }}>
+        {{ content.main }}
+      </div>
+    {% endif %}
+
+    {% if content.sidebar %}
+      <div {{ region_attributes.sidebar }}>
+        {{ content.sidebar }}
+      </div>
+    {% endif %}
+
+  </div>
+
+  {% if settings.h_rules == 'below' or settings.h_rules == 'both' %}
+    <hr/>
+  {% endif %}
+
+{% endif %}

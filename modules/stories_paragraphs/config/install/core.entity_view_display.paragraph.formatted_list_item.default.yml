@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.formatted_list_item.field_heading
+    - field.field.paragraph.formatted_list_item.field_rich_text
+    - paragraphs.paragraphs_type.formatted_list_item
+  module:
+    - heading
+    - text
+id: paragraph.formatted_list_item.default
+targetEntityType: paragraph
+bundle: formatted_list_item
+mode: default
+content:
+  field_heading:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: heading
+    region: content
+  field_rich_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

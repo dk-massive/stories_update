@@ -1,0 +1,27 @@
+bundle: stories
+excluded:
+  - core.entity_view_mode.node.card
+  - core.entity_form_display.media.file.default
+  - core.entity_form_display.media.remote_video.default
+  - core.entity_form_display.media.video.default
+  - core.entity_form_display.node.page.default
+  - core.entity_view_display.media.file.default
+  - core.entity_view_display.media.remote_video.default
+  - core.entity_view_display.media.video.default
+  - core.entity_view_display.node.page.card
+  - core.entity_view_display.node.page.default
+  - core.entity_view_display.node.page.full
+  - core.entity_view_display.node.page.teaser
+  - field.field.media.file.field_media_file
+  - field.field.media.remote_video.field_media_oembed_video
+  - field.field.media.video.field_media_video_file
+  - field.field.node.page.field_content
+  - field.field.node.page.field_sidebar_content
+  - field.storage.media.field_media_file
+  - field.storage.media.field_media_oembed_video
+  - field.storage.media.field_media_video_file
+  - field.storage.node.field_sidebar_content
+  - media.type.file
+  - media.type.remote_video
+  - media.type.video
+required: true

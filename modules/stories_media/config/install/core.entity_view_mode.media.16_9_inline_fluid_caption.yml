@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.16_9_inline_fluid_caption
+label: '16:9 Inline Fluid - Caption'
+targetEntityType: media
+cache: true

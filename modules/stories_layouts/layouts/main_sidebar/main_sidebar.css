@@ -1,0 +1,14 @@
+.l-section.l-section--main-sidebar {
+  display: flex;
+}
+
+.l-section.l-section--main-sidebar .l-section__main {
+  width: 78.260%;
+  padding: 0 8.695% 0 4.347%;
+}
+
+.l-section.l-section--main-sidebar .l-section__sidebar {
+  width: 21.739%;
+}
+
+

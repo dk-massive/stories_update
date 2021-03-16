@@ -1,0 +1,13 @@
+.l-section {
+  display: block;
+}
+
+.l-section__col {
+  margin-right: 30px;
+}
+
+.l-section__col:last-of-type {
+  margin-right: 0;
+}
+
+

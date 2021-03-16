@@ -1,0 +1,45 @@
+layout_section:
+  css:
+    css/layout_section.css: {}
+
+one_column:
+  css:
+    component:
+      layouts/one_column/one_column.css: {}
+  dependencies:
+    - stories_layouts/layout_section
+
+full:
+  css:
+    component:
+      layouts/full/full.css: {}
+  dependencies:
+    - stories_layouts/layout_section
+
+two_column:
+  css:
+    component:
+      layouts/two_column/two_column.css: {}
+  dependencies:
+    - stories_layouts/layout_section
+
+three_column:
+  css:
+    component:
+      layouts/three_column/three_column.css: {}
+  dependencies:
+    - stories_layouts/layout_section
+
+four_column:
+  css:
+    component:
+      layouts/four_column/four_column.css: {}
+  dependencies:
+    - stories_layouts/layout_section
+
+main_sidebar:
+  css:
+    component:
+      layouts/main_sidebar/main_sidebar.css: {}
+  dependencies:
+    - stories_layouts/layout_section

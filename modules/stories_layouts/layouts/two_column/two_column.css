@@ -1,0 +1,9 @@
+
+.l-section.l-section--two-col {
+  display: flex;
+}
+
+.l-section.l-section--two-col .l-section__col {
+  width: 50%;
+}
+

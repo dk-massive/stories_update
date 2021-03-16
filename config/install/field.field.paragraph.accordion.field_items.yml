@@ -1,0 +1,105 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_items
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.formatted_list_item
+  module:
+    - entity_reference_revisions
+id: paragraph.accordion.field_items
+field_name: field_items
+entity_type: paragraph
+bundle: accordion
+label: Items
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      formatted_list_item: formatted_list_item
+    target_bundles_drag_drop:
+      accordion:
+        weight: 27
+        enabled: false
+      block_reference:
+        weight: 28
+        enabled: false
+      call_out_text:
+        weight: 29
+        enabled: false
+      call_to_action:
+        weight: 30
+        enabled: false
+      card:
+        weight: 31
+        enabled: false
+      contact:
+        weight: 32
+        enabled: false
+      contact_info:
+        weight: 33
+        enabled: false
+      content_list:
+        weight: 34
+        enabled: false
+      file_download:
+        weight: 35
+        enabled: false
+      formatted_list:
+        weight: 36
+        enabled: false
+      formatted_list_item:
+        enabled: true
+        weight: 37
+      formstack:
+        weight: 38
+        enabled: false
+      heading:
+        weight: 39
+        enabled: false
+      hero:
+        weight: 40
+        enabled: false
+      image:
+        weight: 41
+        enabled: false
+      image_text:
+        weight: 42
+        enabled: false
+      layout:
+        weight: 43
+        enabled: false
+      link_list:
+        weight: 44
+        enabled: false
+      media_gallery:
+        weight: 45
+        enabled: false
+      quote:
+        weight: 46
+        enabled: false
+      rich_text:
+        weight: 47
+        enabled: false
+      stat_block:
+        weight: 48
+        enabled: false
+      table:
+        weight: 49
+        enabled: false
+      tabs:
+        weight: 50
+        enabled: false
+      testimonial:
+        weight: 51
+        enabled: false
+      video:
+        weight: 52
+        enabled: false
+field_type: entity_reference_revisions

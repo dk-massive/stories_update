@@ -1,0 +1,41 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a full section layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% if content %}
+
+  {% if settings.background_color != 'white' %}
+    {% do attributes.addClass('l-section--banded') %}
+    {% do attributes.addClass('t-' ~ settings.background_color ) %}
+  {% endif %}
+
+  {% if settings.spacing %}
+    {% do attributes.addClass('l-section--' ~ settings.spacing ) %}
+  {% endif %}
+
+  {% if settings.h_rules == 'above' or settings.h_rules == 'both' %}
+    <hr/>
+  {% endif %}
+
+  <div {{ attributes.addClass(['l-section', 'l-section--full']) }}>
+    {% if content.main %}
+      <div {{ region_attributes.main.addClass('l-section__col') }}>
+        {{ content.main }}
+      </div>
+    {% endif %}
+  </div>
+
+  {% if settings.h_rules == 'below' or settings.h_rules == 'both' %}
+    <hr/>
+  {% endif %}
+
+{% endif %}

@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.definition_list.field_items
+    - paragraphs.paragraphs_type.definition_list
+  module:
+    - entity_reference_revisions
+id: paragraph.definition_list.default
+targetEntityType: paragraph
+bundle: definition_list
+mode: default
+content:
+  field_items:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden: {  }

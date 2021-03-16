@@ -1,0 +1,42 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a one-column layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% if content %}
+  {% do region_attributes.column_one.addClass('l-section__col') %}
+  {% do region_attributes.column_one.addClass('l-section__col--' ~ settings.column_size) %}
+
+  {% if settings.background_color != 'light' %}
+    {% do attributes.addClass('t-' ~ settings.background_color ) %}
+  {% endif %}
+
+  {% if settings.spacing %}
+    {% do attributes.addClass('l-section--' ~ settings.spacing ) %}
+  {% endif %}
+
+  {% if settings.h_rules == 'above' or settings.h_rules == 'both' %}
+    <hr/>
+  {% endif %}
+
+  <div {{ attributes.addClass('l-section') }}>
+    {% if content.column_one %}
+      <div {{ region_attributes.column_one }}>
+        {{ content.column_one }}
+      </div>
+    {% endif %}
+  </div>
+
+  {% if settings.h_rules == 'below' or settings.h_rules == 'both' %}
+    <hr/>
+  {% endif %}
+
+{% endif %}

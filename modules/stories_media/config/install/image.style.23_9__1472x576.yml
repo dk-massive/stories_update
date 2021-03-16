@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.23_9
+  module:
+    - crop
+name: 23_9__1472x576
+label: '23:9 1472x576'
+effects:
+  5f8e1bc5-478b-4e96-9f5b-99a5294a44f3:
+    uuid: 5f8e1bc5-478b-4e96-9f5b-99a5294a44f3
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: '23_9'
+  e6fba525-5f56-48b1-ac89-a64c9665e793:
+    uuid: e6fba525-5f56-48b1-ac89-a64c9665e793
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 1472
+      height: 576
+      anchor: center-center

@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.1_1_inline_fluid
+label: '1:1 Inline Fluid'
+targetEntityType: media
+cache: true

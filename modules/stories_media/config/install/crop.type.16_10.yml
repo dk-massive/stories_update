@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: '16_10'
+label: '16:10'
+description: ''
+aspect_ratio: '16:10'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

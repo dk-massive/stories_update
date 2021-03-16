@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.4_3
+  module:
+    - crop
+name: 4_3__1088x816
+label: '4:3 1088x816'
+effects:
+  abd11aee-77ee-42ef-ae98-03d111166096:
+    uuid: abd11aee-77ee-42ef-ae98-03d111166096
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: '4_3'
+  153c0cf2-ddd0-442f-aa44-f256ab5738a5:
+    uuid: 153c0cf2-ddd0-442f-aa44-f256ab5738a5
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 1088
+      height: 816
+      anchor: center-center

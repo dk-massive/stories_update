@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: multi_column_list
+label: 'Multi Column List'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
